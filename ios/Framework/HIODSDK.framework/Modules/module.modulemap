@@ -1,0 +1,11 @@
+framework module HIODSDK {
+  umbrella header "HIODSDK.h"
+  export *
+
+  module * { export * }
+}
+
+module HIODSDK.Swift {
+  header "HIODSDK-Swift.h"
+  requires objc
+}

@@ -1,0 +1,122 @@
+group = "com.example.flutter_hiodsdk"
+version = "1.0"
+
+
+buildscript {
+    repositories {
+
+        google()
+        mavenCentral()
+    }
+
+    dependencies {
+        classpath("com.android.tools.build:gradle:8.1.0")
+    }
+}
+
+rootProject.allprojects {
+    repositories {
+        flatDir {
+            dirs project(':flutter_hiodsdk').file('libs')
+        }
+        google()
+        mavenCentral()
+        maven {
+            url "https://maven.google.com"
+        }
+        maven { url 'https://artifacts.applovin.com/android' }
+        maven { url "https://android-sdk.is.com" }
+        maven { url "https://dl-maven-android.mintegral.com/repository/mbridge_android_sdk_oversea" }
+        maven { url "https://artifact.bytedance.com/repository/pangle" }
+        maven { url "https://verve.jfrog.io/artifactory/verve-gradle-release" }
+        maven { url "https://artifactory.bidmachine.io/bidmachine" }
+        maven { url "https://jfrog.anythinktech.com/artifactory/debugger" }
+        maven { url "https://jfrog.anythinktech.com/artifactory/overseas_sdk" }
+        maven { url "https://jitpack.io" }
+    }
+}
+
+
+apply plugin: "com.android.library"
+
+android {
+    if (project.android.hasProperty("namespace")) {
+        namespace = "com.example.flutter_hiodsdk"
+    }
+
+    compileSdk = 34
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_1_8
+        targetCompatibility = JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdk = 22
+    }
+
+    dependencies {
+        testImplementation("junit:junit:4.13.2")
+        testImplementation("org.mockito:mockito-core:5.0.0")
+    }
+
+    testOptions {
+        unitTests.all {
+            testLogging {
+               events "passed", "skipped", "failed", "standardOut", "standardError"
+               outputs.upToDateWhen {false}
+               showStandardStreams = true
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar','*.aar'], dir: 'libs')
+
+    //kwaiSDK所需依赖
+    // SDK内部依赖如下，请确保添加
+    implementation "androidx.media3:media3-exoplayer:1.0.0-alpha01"
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation "androidx.annotation:annotation:1.2.0"
+    // 最低支持 kotlin1.4.10
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:1.4.10"
+    // gaid 最低支持play-services-ads-identifier:18.0.1
+    implementation "com.google.android.gms:play-services-ads-identifier:18.0.1"
+    implementation 'com.google.code.gson:gson:2.10'
+    implementation 'com.appsflyer:af-android-sdk:6.9.0'
+    implementation "com.android.installreferrer:installreferrer:2.2"
+
+    //广告源(禁止更新广告源版本，谨慎添加新广告源，如需添加需测试版本与SDK是否冲突)
+    implementation 'com.applovin:applovin-sdk:12.6.0'
+    implementation 'com.applovin.mediation:bidmachine-adapter:3.0.0.0'
+    implementation 'com.applovin.mediation:google-ad-manager-adapter:23.2.0.0'
+    implementation 'com.applovin.mediation:google-adapter:23.2.0.0'
+    implementation 'com.applovin.mediation:ironsource-adapter:8.2.1.0.0'
+    implementation 'com.applovin.mediation:vungle-adapter:7.4.0.0'
+    implementation 'com.applovin.mediation:facebook-adapter:6.17.0.0'
+    implementation 'com.applovin.mediation:mintegral-adapter:16.8.11.0'
+    implementation 'com.applovin.mediation:moloco-adapter:3.1.0.0'
+    implementation 'com.applovin.mediation:bytedance-adapter:6.1.0.9.0'
+    implementation 'com.applovin.mediation:unityads-adapter:4.12.2.0'
+    implementation 'com.applovin.mediation:verve-adapter:3.0.2.0'
+    implementation 'com.applovin.mediation:bigoads-adapter:4.7.0.0'
+
+    //Topon聚合
+    implementation "com.anythink.sdk:core-tpn:6.4.08"
+    implementation "com.anythink.sdk:interstitial-tpn:6.4.08"
+    implementation "com.anythink.sdk:rewardedvideo-tpn:6.4.08"
+    implementation "androidx.browser:browser:1.4.0"
+    //Topon-Facebook
+    implementation "com.anythink.sdk:adapter-tpn-facebook:6.4.08"
+    implementation "com.facebook.android:audience-network-sdk:6.17.0"
+    implementation "androidx.annotation:annotation:1.0.0"
+    //Topon-Admob
+    implementation "com.anythink.sdk:adapter-tpn-admob:6.4.08"
+    implementation "com.google.android.gms:play-services-ads:23.2.0"
+    //Topon-AppLovin
+    implementation "com.anythink.sdk:adapter-tpn-applovin:6.4.08"
+    implementation "com.applovin:applovin-sdk:12.6.0"
+
+}
