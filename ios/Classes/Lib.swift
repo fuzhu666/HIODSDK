@@ -19,13 +19,11 @@ func initSDK(view: UIViewController, args: Any!) async -> Bool {
     SdkConfigInstance.setVideoUnitId(mArgs["videoUnitId"] as? String);
     SdkConfigInstance.setInsUnitId(mArgs["insUnitId"] as? String);
     SdkConfigInstance.setOpenUnitId(mArgs["openUnitId"] as? String);
-    SdkConfigInstance.setAdmobOpenUnitId(mArgs["admobOpenUnitId"] as? String);
     SdkConfigInstance.setNativeUnitId(mArgs["nativeUnitId"] as? String);
     SdkConfigInstance.setSmallNativeUnitId(mArgs["smallNativeUnitId"] as? String);
     SdkConfigInstance.setBannerUnitId(mArgs["bannerUnitId"] as? String)
     SdkConfigInstance.setBannerInlineUnitId(mArgs["bannerUnitId"] as? String)
     SdkConfigInstance.setBannerCollapsibleUnitId(mArgs["bannerUnitId"] as? String)
-    SdkConfigInstance.setMaxAppKey(mArgs["maxAppKey"] as? String)
     SdkInstance.initWithCompletion({ isInit, userInfo in
         DispatchQueue.global(qos: .background).async {
             // 阻塞请求，等待广告加载完毕

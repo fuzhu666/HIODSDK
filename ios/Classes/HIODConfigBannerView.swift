@@ -2,7 +2,6 @@ import Flutter
 import Foundation
 import GoogleMobileAds
 import HIODSDK;
-import AppLovinSDK
 
 // 组件构造
 class HIODConfigBannerView: NSObject, FlutterPlatformView {
@@ -23,12 +22,12 @@ class HIODConfigBannerView: NSObject, FlutterPlatformView {
     let mHeight = params?.value(forKey: "height") as? Double
     let mWidth = params?.value(forKey: "width") as? Double
     let mBannerView = UIView(frame: CGRect(x: 0, y: 0, width: mWidth ?? 350, height: mHeight ?? 50))
-    let adView = MAAdView(adUnitIdentifier: HIODConfig.getInstance().bannerUnitId)
-    adView.setLocalExtraParameterForKey("adaptive_banner_type", value: "inline")
+    let adView = GADBannerView()
+    adView.adUnitID = HIODConfig.getInstance().bannerUnitId
     adView.backgroundColor = .clear
     adView.frame = CGRect(x: 0, y: 0, width: mWidth ?? 350, height: mHeight ?? 50)
     mBannerView.addSubview(adView)
-    adView.loadAd()
+    adView.load(GADRequest())
     return mBannerView
   }
 }

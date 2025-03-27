@@ -1,60 +1,7 @@
 PODS:
-  - Ads-Global/BUAdSDK_Compatible (6.2.0.7):
-    - Ads-Global/Dep_Compatible
-  - Ads-Global/Dep_Compatible (6.2.0.7):
-    - BURelyFoundation_Global/Pangle (~> 1.0.0.6)
-  - AppLovinMediationBigoAdsAdapter (4.5.1.1):
-    - AppLovinSDK (>= 12.4.1)
-    - BigoADS (= 4.5.1)
-  - AppLovinMediationByteDanceAdapter (6.2.0.7.3):
-    - Ads-Global/BUAdSDK_Compatible (= 6.2.0.7)
-    - AppLovinSDK (>= 13.0.0)
-  - AppLovinMediationIronSourceAdapter (8.3.0.0.2):
-    - AppLovinSDK (>= 13.0.0)
-    - IronSourceSDK (= 8.3.0.0)
-  - AppLovinMediationMintegralAdapter (7.7.2.0.1):
-    - AppLovinSDK (>= 13.0.0)
-    - MintegralAdSDK (= 7.7.2)
-    - MintegralAdSDK/BidSplashAd (= 7.7.2)
-  - AppLovinMediationUnityAdsAdapter (4.12.3.0):
-    - AppLovinSDK (>= 13.0.0)
-    - UnityAds (= 4.12.3)
-  - AppLovinMediationVungleAdapter (7.4.1.1):
-    - AppLovinSDK (>= 13.0.0)
-    - VungleAds (= 7.4.1)
-  - AppLovinSDK (13.0.1)
   - AppsFlyerFramework (6.15.3):
     - AppsFlyerFramework/Main (= 6.15.3)
   - AppsFlyerFramework/Main (6.15.3)
-  - BigoADS (4.5.1)
-  - BURelyFoundation_Global/AFNetworking (1.0.0.6)
-  - BURelyFoundation_Global/APM (1.0.0.6)
-  - BURelyFoundation_Global/Foundation (1.0.0.6):
-    - BURelyFoundation_Global/NETWork
-  - BURelyFoundation_Global/Gecko (1.0.0.6):
-    - BURelyFoundation_Global/Foundation
-  - BURelyFoundation_Global/Header (1.0.0.6)
-  - BURelyFoundation_Global/NETWork (1.0.0.6):
-    - BURelyFoundation_Global/AFNetworking
-  - BURelyFoundation_Global/Pangle (1.0.0.6):
-    - BURelyFoundation_Global/AFNetworking
-    - BURelyFoundation_Global/APM
-    - BURelyFoundation_Global/Foundation
-    - BURelyFoundation_Global/Gecko
-    - BURelyFoundation_Global/Header
-    - BURelyFoundation_Global/NETWork
-    - BURelyFoundation_Global/SDWebImage
-    - BURelyFoundation_Global/YYModel
-    - BURelyFoundation_Global/ZFPlayer
-    - BURelyFoundation_Global/Zip
-  - BURelyFoundation_Global/SDWebImage (1.0.0.6):
-    - BURelyFoundation_Global/Foundation
-  - BURelyFoundation_Global/YYModel (1.0.0.6)
-  - BURelyFoundation_Global/ZFPlayer (1.0.0.6):
-    - BURelyFoundation_Global/Foundation
-    - BURelyFoundation_Global/Zip
-  - BURelyFoundation_Global/Zip (1.0.0.6):
-    - BURelyFoundation_Global/Foundation
   - FBAEMKit (17.4.0):
     - FBSDKCoreKit_Basics (= 17.4.0)
   - FBSDKCoreKit (17.4.0):
@@ -63,13 +10,6 @@ PODS:
   - FBSDKCoreKit_Basics (17.4.0)
   - Flutter (1.0.0)
   - flutter_hiodsdk (0.0.0):
-    - AppLovinMediationBigoAdsAdapter (~> 4.5.1.0)
-    - AppLovinMediationByteDanceAdapter (~> 6.2.0.7.2)
-    - AppLovinMediationIronSourceAdapter (~> 8.3.0.0.1)
-    - AppLovinMediationMintegralAdapter (~> 7.7.2.0.1)
-    - AppLovinMediationUnityAdsAdapter (~> 4.12.3.0)
-    - AppLovinMediationVungleAdapter (~> 7.4.1.1)
-    - AppLovinSDK (~> 13.0.0)
     - AppsFlyerFramework (~> 6.15.3)
     - FBSDKCoreKit (~> 17.4)
     - Flutter
@@ -78,52 +18,9 @@ PODS:
   - GGOpenSDK (1.4.0)
   - Google-Mobile-Ads-SDK (11.10.0):
     - GoogleUserMessagingPlatform (>= 1.1)
-  - GoogleUserMessagingPlatform (2.7.0)
+  - GoogleUserMessagingPlatform (3.0.0)
   - integration_test (0.0.1):
     - Flutter
-  - IronSourceSDK (8.3.0.0)
-  - MintegralAdSDK (7.7.2):
-    - MintegralAdSDK/BannerAd (= 7.7.2)
-    - MintegralAdSDK/BidBannerAd (= 7.7.2)
-    - MintegralAdSDK/BidInterstitialVideoAd (= 7.7.2)
-    - MintegralAdSDK/BidNativeAd (= 7.7.2)
-    - MintegralAdSDK/BidNewInterstitialAd (= 7.7.2)
-    - MintegralAdSDK/BidRewardVideoAd (= 7.7.2)
-    - MintegralAdSDK/InterstitialVideoAd (= 7.7.2)
-    - MintegralAdSDK/NativeAd (= 7.7.2)
-    - MintegralAdSDK/NewInterstitialAd (= 7.7.2)
-    - MintegralAdSDK/RewardVideoAd (= 7.7.2)
-  - MintegralAdSDK/BannerAd (7.7.2):
-    - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidBannerAd (7.7.2):
-    - MintegralAdSDK/BannerAd
-    - MintegralAdSDK/BidNativeAd
-  - MintegralAdSDK/BidInterstitialVideoAd (7.7.2):
-    - MintegralAdSDK/BidNativeAd
-    - MintegralAdSDK/InterstitialVideoAd
-  - MintegralAdSDK/BidNativeAd (7.7.2):
-    - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/BidNewInterstitialAd (7.7.2):
-    - MintegralAdSDK/BidNativeAd
-    - MintegralAdSDK/NewInterstitialAd
-  - MintegralAdSDK/BidRewardVideoAd (7.7.2):
-    - MintegralAdSDK/BidNativeAd
-    - MintegralAdSDK/RewardVideoAd
-  - MintegralAdSDK/BidSplashAd (7.7.2):
-    - MintegralAdSDK/BidNativeAd
-    - MintegralAdSDK/SplashAd
-  - MintegralAdSDK/InterstitialVideoAd (7.7.2):
-    - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/NativeAd (7.7.2)
-  - MintegralAdSDK/NewInterstitialAd (7.7.2):
-    - MintegralAdSDK/InterstitialVideoAd
-    - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/RewardVideoAd (7.7.2):
-    - MintegralAdSDK/NativeAd
-  - MintegralAdSDK/SplashAd (7.7.2):
-    - MintegralAdSDK/NativeAd
-  - UnityAds (4.12.3)
-  - VungleAds (7.4.1)
 
 DEPENDENCIES:
   - Flutter (from `Flutter`)
@@ -132,27 +29,13 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
-    - Ads-Global
-    - AppLovinMediationBigoAdsAdapter
-    - AppLovinMediationByteDanceAdapter
-    - AppLovinMediationIronSourceAdapter
-    - AppLovinMediationMintegralAdapter
-    - AppLovinMediationUnityAdsAdapter
-    - AppLovinMediationVungleAdapter
-    - AppLovinSDK
     - AppsFlyerFramework
-    - BigoADS
-    - BURelyFoundation_Global
     - FBAEMKit
     - FBSDKCoreKit
     - FBSDKCoreKit_Basics
     - GGOpenSDK
     - Google-Mobile-Ads-SDK
     - GoogleUserMessagingPlatform
-    - IronSourceSDK
-    - MintegralAdSDK
-    - UnityAds
-    - VungleAds
 
 EXTERNAL SOURCES:
   Flutter:
@@ -163,30 +46,16 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/integration_test/ios"
 
 SPEC CHECKSUMS:
-  Ads-Global: 9cb739d414240518bf1fa63962e2ba65b3c39100
-  AppLovinMediationBigoAdsAdapter: 96d9d4de62b90ffcfae6f1bfedc341c0a7dc2fa6
-  AppLovinMediationByteDanceAdapter: cbb00ca6de40044302c00bbdbd0f578df980f406
-  AppLovinMediationIronSourceAdapter: c4575f7abaa710be84aa3de18a76a4d492cf1377
-  AppLovinMediationMintegralAdapter: 9952d52bcec54fe038b690bf9a29375d5728419a
-  AppLovinMediationUnityAdsAdapter: 715fccd4edd58ed8b42708f6cd6229888db0226f
-  AppLovinMediationVungleAdapter: e4422d7ea4369abb7ed7f7fe09a091f967059bbf
-  AppLovinSDK: fdae6a4361c9c9b09f8d7d18ede792368221d987
   AppsFlyerFramework: ad7ff0d22aa36c7f8cc4f71a5424e19b89ccb8ae
-  BigoADS: ee4a4bc66c66d9872bb8c5866cb195ac21f81d9e
-  BURelyFoundation_Global: 17faee76affe097bd20b422fe829f9f90ed10e25
   FBAEMKit: 58cb5f302cdd715a56d4c1d0dfdd2e423ac1421a
   FBSDKCoreKit: 94d7461d0cecf441b1ba7c41acfff41daa8ccd41
   FBSDKCoreKit_Basics: 151b43db8b834d3f0e02f95d36a44ffd36265e45
   Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
-  flutter_hiodsdk: 174ee7f9e0d1915370031490dcdca3dc5fe005c3
+  flutter_hiodsdk: c3297b9d5fa42a30220f8fb50498226a4ef75e9d
   GGOpenSDK: 65784fb9685b550c59245613da7d2218dc11f895
   Google-Mobile-Ads-SDK: 13e6e98edfd78ad8d8a791edb927658cc260a56f
-  GoogleUserMessagingPlatform: a8b56893477f67212fbc8411c139e61d463349f5
+  GoogleUserMessagingPlatform: f8d0cdad3ca835406755d0a69aa634f00e76d576
   integration_test: 4a889634ef21a45d28d50d622cf412dc6d9f586e
-  IronSourceSDK: 2dbbc8b9d20cbc4a60901e07e0aa5f3bf6a15d9a
-  MintegralAdSDK: 7e05f9ab5f555b7049435a9477d457d7bf9b5473
-  UnityAds: 32596c2f76856d643b50d3da51c47a552b80d5a4
-  VungleAds: 97140121d0b909891eb217d1c102a194601da607
 
 PODFILE CHECKSUM: 819463e6a0290f5a72f145ba7cde16e8b6ef0796
 
